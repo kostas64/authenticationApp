@@ -8,13 +8,6 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text style={{paddingBottom: 10}}>Home Screen</Text>
-      <TouchableOpacity
-        onPress={() => {
-          navigation.pop();
-        }}
-        style={styles.button}>
-        <Text style={styles.buttonText}>Back</Text>
-      </TouchableOpacity>
     </View>
   );
 }
@@ -24,15 +17,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  button: {
-    justifyContent: 'center',
-    borderRadius: 15,
-    width: 80,
-    height: 50,
-    backgroundColor: 'rgba(0,0,0,0.4)',
-  },
-  buttonText: {
-    alignSelf: 'center',
   },
 });
