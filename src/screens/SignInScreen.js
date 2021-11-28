@@ -13,7 +13,7 @@ import {signIn} from '../services/userServices';
 export default function SignInScreen() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const dipatch = useDispatch();
+  const dispatch = useDispatch();
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <View style={styles.container}>
@@ -32,7 +32,7 @@ export default function SignInScreen() {
         />
         <Button
           title="Sign in"
-          onPress={() => dipatch(signIn({username, password}))}
+          onPress={() => dispatch(signIn({username, password}))}
         />
       </View>
     </TouchableWithoutFeedback>

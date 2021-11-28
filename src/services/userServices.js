@@ -3,5 +3,5 @@ export const signIn = () => {
 };
 
 export const signOut = () => {
-  return {type: 'SIGN_OUT'};
+  return {type: 'SIGN_OUT', token: null};
 };

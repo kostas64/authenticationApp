@@ -1,13 +1,15 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
-import {useNavigation} from '@react-navigation/core';
+import {View, Text, StyleSheet, Button} from 'react-native';
+import {signOut} from '../services/userServices';
+import {useDispatch} from 'react-redux';
 
 export default function HomeScreen() {
-  const navigation = useNavigation();
+  const dispatch = useDispatch();
 
   return (
     <View style={styles.container}>
       <Text style={{paddingBottom: 10}}>Home Screen</Text>
+      <Button title="Sign out" onPress={() => dispatch(signOut())} />
     </View>
   );
 }
