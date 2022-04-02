@@ -8,7 +8,7 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={{paddingBottom: 10}}>Home Screen</Text>
+      <Text style={styles.padding}>Home Screen</Text>
       <Button title="Sign out" onPress={() => dispatch(signOut())} />
     </View>
   );
@@ -20,4 +20,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  padding: {paddingBottom: 10},
 });

@@ -23,6 +23,7 @@ export default function SignInScreen() {
           value={username}
           onChangeText={setUsername}
         />
+        <View style={styles.padding} />
         <TextInput
           style={{borderColor: 'black', borderWidth: 1}}
           placeholder="Password"
@@ -30,6 +31,7 @@ export default function SignInScreen() {
           onChangeText={setPassword}
           secureTextEntry
         />
+        <View style={styles.padding} />
         <Button
           title="Sign in"
           onPress={() => dispatch(signIn({username, password}))}
@@ -43,5 +45,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    padding: 20,
   },
+  padding: {paddingTop: 5},
 });

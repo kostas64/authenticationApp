@@ -5,8 +5,9 @@ import {NavigationContainer} from '@react-navigation/native';
 import {AuthProvider} from './src/components/AuthProvider';
 import thunk from 'redux-thunk';
 import {Provider} from 'react-redux';
-import rootReducer from './src/reducers/rootReducer';
-const store = createStore(rootReducer, applyMiddleware(thunk));
+import reducers from './src/reducers/reducers';
+
+const store = createStore(reducers, applyMiddleware(thunk));
 
 export default function App() {
   return (
