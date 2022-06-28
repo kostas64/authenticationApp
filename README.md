@@ -2,7 +2,7 @@
 
 In order to run and check this simple app, you need to follow some steps.
 
-Clone the project
-Run "npm install"
-Start the server "npm start"
-Done!
+1. Clone the project
+2. Run "npm install" - Only for iOS "cd ios && pod install && cd .." 
+3. Start the server "npm start"
+4. Done!
